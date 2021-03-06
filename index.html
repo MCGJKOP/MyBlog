@@ -28,9 +28,6 @@
 		body{
 			cursor:default;
 		}
-		.sign_in{
-			cursor:help;		    
-		}
 		*{
 			color:lime;	    
 		}
@@ -39,7 +36,7 @@
 	<body id="new_content">
 	<div style="text-align: center;">	
     		<div style="text-align: left;">
-			<a onclick="sign_in()" id="sign_in" class="sign_in">登录</a>
+			<a onclick="sign_in()" id="sign_in" class="sign_in" style="cursor:help;">登录</a>
         	</div>
 	
 	<div style="text-align: center;margin-block: -66px 0;"><p style="
@@ -67,12 +64,14 @@
 					document.getElementById("demo").innerHTML=x;
 					document.getElementById("sign_in").innerHTML="已登录";
 					document.getElementById("sign_in").onclick="javascript:;";
+					document.getElementById("sign_in").style.cursor = "default";
 				}else{
 					if (name!=null && name!=""){
 						x="欢迎 " + name + "!";
 						document.getElementById("demo").innerHTML=x;
 						document.getElementById("sign_in").innerHTML="已登录";
 						document.getElementById("sign_in").onclick="javascript:;";
+						document.getElementById("sign_in").style.cursor = "default";
 					}
 				}
 			}
