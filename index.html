@@ -29,9 +29,6 @@
 		body{
 			cursor:default;
 		}
-		.sign_in_{
-			display:none;
-		}
 		.sign_in{
 			cursor:help;		    
 		}
@@ -65,12 +62,14 @@
 				if (name=="西瓜邪骨团god404"){
 					x="欢迎 " + name + "! 我会更新这个网页的。";
 					document.getElementById("demo").innerHTML=x;
-					document.getElementById("sign_in").classname = "sign_in_"
+					document.getElementById("sign_in").innerHTML="已登录";
+					document.getElementById("sign_in").onclick="javascript:;";
 				}else{
 					if (name!=null && name!=""){
 						x="欢迎 " + name + "!";
 						document.getElementById("demo").innerHTML=x;
-						document.getElementById("sign_in").classname = "sign_in_"
+						document.getElementById("sign_in").innerHTML="已登录";
+						document.getElementById("sign_in").onclick="javascript:;";
 					}
 				}
 			}
