@@ -9,10 +9,11 @@
         		color:lime;
        			font-size:50;
     		}
-    		p{
+    		#link,p{
 			margin-block-start:-10px;
 			margin-block-end:-10px;
 			text-align:center;
+			cursor:default;
     		}
     		input,input:hover{
 			background:none;
@@ -21,23 +22,29 @@
 			border-style:solid;
 			outline:none;
 			font-size:30;
+			cursor:default;
     		}
 		a,a:hover{
 			text-decoration:none;
+			cursor:default;
 		}
-		*{
-			cursor: default;
+		body{
+			cursor:no-drop;
 		}
 	</style>
 	</head>
 	<body id='new_content'>
-		<a style="text-align:left;" onclick="sign_in()">SignIn</a>
-		<p>welocome to my webpages</p>
+		<div>
+			<a style="text-align:left;" onclick="sign_in()" id="sign_in">SignIn</a>
+			<p>welcome to my webpages</p>
+		</div>
 		<div id="demo"></div>
 		<div>
-			<a href='https://github.com/MCGJKOP' target='My Github'>
+			<a href='https://github.com/MCGJKOP' target='My Github' id="link">
 				<img src='https://avatars.githubusercontent.com/u/66903641?s=460&u=6ed63e36b617a2073070cdf29510c3387a8f0d8a&v=4' width=30 hieght=30>
-				<input type='button' value='My Github'></a><a href='https://mcgjkop.github.io/MyBlog/JAVA' target='My Github'>
+				<input type='button' value='My Github'>
+			</a>
+			<a href='https://mcgjkop.github.io/MyBlog/JAVA' target='My Github'id="link">
 				<input type='button' value='JAVA'>
 			</a>
 		</div>
