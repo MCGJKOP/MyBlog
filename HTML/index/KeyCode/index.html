@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "../CSS/index.css" />
+		<meta charset="utf-8">
+		<title>tools - 侦测KeyCode</title>
+		<style>body{color:white;/*background:black;*/font-size:1em;text-align:center;}</style>
+		<script>
+		function KEY(event){
+		var1="KeyCode="+event.keyCode;
+		document.getElementById('bg').innerHTML=var1;
+		}
+		</script>
+	</head>
+	<body onKeyDown="KEY(event)">
+		<div id="bg" class="bg">(请按下键盘的按键)</div>
+	</body>	
+</html>

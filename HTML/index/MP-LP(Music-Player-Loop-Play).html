@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>audio</title>
+		<script>
+			function myAudio(){
+				audioO = document.getElementById("audio")
+				inputZ = document.getElementById("input").value;
+				audioO.src=inputZ;
+				audioO.play();
+				console.log("AUDIO_YES");
+			}
+			function myAudioPlay(){
+				audioO = document.getElementById("audio");
+				audioO.play();
+				console.log("AUDIO_PLAY");
+			}
+			function myAudioPause(){
+				audioO = document.getElementById("audio");
+				audioO.pause();
+				console.log("AUDIO_PAUSE");
+			}
+			function hack(){
+				alert("WHAT???you is hackers,l saw you hacked my webpages!!!!\n什么？？？您是黑客，我看到您入侵了我的网页了！！！！");
+				console.log("WEBPAGES_HACK");
+				hack();
+			}
+			function otherA(){
+				document.getElementById("i").style.display = 'inline-block'
+				document.getElementById("c").style.display = 'none'
+				console.log("ADMINISTRATOR_AND_OTHER");
+			}
+			function Key(event){
+				if(event.keyCode==13){
+					myAudio();
+				}
+			}
+		</script>
+        <style>
+            body{
+                background: /*url("/image/HTML.image/background (1).png")*/ black;
+                text-align: center;
+				margin-block-start: 5px;
+				margin-block-end: 0px;
+				cursor:url(arrow_r.cur),auto;
+			}
+            input,button {
+				padding: 1px 9px;
+				cursor:url(arrow_r.cur),auto;
+			}
+			input,button,a{
+				outline:none;
+			}
+			#input:focus{
+				outline:none;
+			}
+			#A {
+				margin-inline-start: 0px;
+				margin-inline-end: -6px;
+			}
+			button,input{
+				background:black;
+				color:white;
+				border-color:#676767;
+				font-size:10;
+				border-style:solid;
+			}
+			button:hover,input:hover{
+				background:black;
+				color:lime;
+				font-size:15;
+			}
+			audio{
+				display: none;
+			}
+        </style>
+    </head>
+    <body>
+        <div>
+			<input type="text" id="input" value="路径" class="A" onKeyDown="Key(event)" autocomplete="off">
+			<button onclick="myAudio()" class="A" id="A">OK</button>
+        </div>
+            <audio controls="controls" src="new.mp3" id="audio" loop></audio>
+		<div>
+			<button onclick="myAudioPlay()">Play</button>
+			<button onclick="myAudioPause()">Pause</button>
+			<a href="MP-NLP(Music-Player-No-Loop-Play).html" style="text-decoration:none;">
+				<button>NOloop</button>
+			</a>
+			<a href="KJJ.html" style="text-decoration:none;">
+				<button>EXIT</button>
+			</a>
+		</div>
+		<button onclick="hack()" style="display:none;" id="i" >hack My Web Pages?????</button>
+		<button onclick="otherA()" style="display:inline-block;"id="c">...</button>
+		<script src="JS/JS.js"></script>
+	</body>
+</html>

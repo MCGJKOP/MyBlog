@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>快捷键.doc</title>
+        <script src="JS/Enter.js"></script>
+        <script>
+                function KeyToCode(){
+                  CV=document.getElementById('input').value;      
+	if (CV=="AUDIO" || CV=="audio"){
+		document.getElementById('bg').innerHTML="<div><a class='title' style='color: rgb(228 228 228 / 44%);' href='MP.html'>Welocome to the hide webpage</a></div>"
+	}else{
+		if(CV!="" && CV!=null){
+			document.getElementById('bg').innerHTML='<p>404 Not Found :(</p><div><p id="code"></p><p>不是一个好的code</p></div><a style="color: rgb(228 228 228 / 44%);" href="KJJ.html">ReOpen</a>';
+			document.getElementById("code").innerText=CV;
+		}
+	}
+                }
+        </script>
+        <style>
+            *{
+                font-weight:900;
+            }
+            .bg{
+                width:100%;
+                height:100%;
+                background:rgb(1 1 1 / 17%);
+            }
+            body{
+                /*background: url("/image/HTML.image/background (1).png") black;*/
+                background:linear-gradient(180deg,rgb(0, 119, 255),rgb(115, 211, 232));
+                text-align: center;
+            }
+            p,a,a:hover{
+                /*color: lime;*/
+                /*color:rgba(1,1,1,0.5);*/
+                color: rgb(228 228 228 / 44%);
+                margin-block-start: 1px;
+                margin-block-end: 1px;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+            .title{
+                font-size: 50px;
+            }
+            .text{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg" id="bg">
+            <p class="title">WIN10快捷键:</p>
+            <p class="text">CTRL + a 全选</p>
+            <p class="text">CTRL + x 剪切</p>
+            <p class="text">CTRL + c 复制</p>
+            <p class="text">CTRL + v 粘贴</p>
+            <p class="text">CTRL + z 撤销</p>
+            <p class="text">CTRL + y 恢复</p>
+            <p class="text">CTRL + s 保存</p>
+            <p class="text">CTRL + shift + Esc 任务管理器</p>
+            <p class="text">win + X + U + U	关机</p>
+            <p class="text">win + X + U + R	重启	</p>
+            <p class="text">win + X + U + S	睡眠</p>
+            <p class="text">win + X + U + I	注销</p>
+            <p class="text">win + R 打开运行窗口</p>
+            <p class="text">win + A	打开通知中心</p>
+            <p class="text">win + W	打开windows link 工作区（可以用来临时绘图和截屏）</p>
+            <p class="text">win + E	打开资源管理器（我的电脑或者我的文档）	</p>
+            <p class="text">win + I	打开设置</p>
+            <p class="text">win + D	最小化所有窗口</p>
+            <p class="text">win + L	锁屏</p>
+            <p class="text">win + Shift + S 截图</p>
+            <p class="text">win + TAB 任务总览（可以在这里增加新的桌面）</p>
+            <p class="text">win + ↑ 最大化窗口或者打开最小化的窗口</p>
+            <p class="text">win + ↓	最小化窗口或者窗口化全屏的窗口</p>
+            <p class="text">ALT +TAB 切换窗口</p>
+            <p class="text">CTRL + win + ←或→ 切换不同的桌面</p>
+            <p class="text">win + 数字键 打开对应的任务栏图标</p>
+            <p class="text">shift + del 永久删除（无法恢复，不会到回收站！！！慎用）</p>
+            <p class="text">AlT+F4  关闭窗口或者弹出一个电源选项</p>
+            <p>Code:<input value="Code..." id="input" style="outline:none;" onKeyDown="Key(event)" autocomplete="off"></p>
+            <script src="JS/CODE.js"></script>
+        </div>
+    </body>
+</html>

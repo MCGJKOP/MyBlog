@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>tools - 鼠标坐标(XY)</title>
+<script type="text/javascript">
+function show_coords(event)
+{
+x=event.clientX
+y=event.clientY
+Key="鼠标X 坐标= " + x + "鼠标Y 坐标=" + y;
+document.body.innerHTML=Key
+}
+</script>
+<style>body{background:black;color:white;text-align:center;font-size:1em;}</style>
+</head>
+
+<body onmousemove="show_coords(event)">
+
+<p>(请移动鼠标)</p>
+
+</body>
+</html>
