@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<meta charset=UTF-8">
+		<title>MyBlog - MCGJKOP</title>
+		<style>
+    		body{
+        		background:black;
+        		color:lime;
+       			font-size:50;
+    		}
+    		#link,p{
+			margin-block:0px;
+			text-align:center;
+			cursor:default;
+    		}
+    		input,input:hover{
+			background:none;
+			color:lime;
+			border:white;
+			border-style:solid;
+			outline:none;
+			font-size:30;
+			cursor:default;
+    		}
+		a,a:hover{
+			text-decoration:none;
+		}
+		body{
+			cursor:default;
+		}
+		*{
+			color:lime;	    
+		}
+	</style>
+	</head>
+	<body id="new_content">
+		<div style="text-align: center;">	
+    			<div style="float:left;">
+				<a onclick="sign_in()" id="sign_in" class="sign_in" style="cursor:help;">登录</a>
+        		</div>
+			<div>
+				<p style="display: contents;">欢迎进入我的网页</p>
+				<div id="demo" style="text-align:center;" title="你的名字(代码)"></div>
+				<div id="link">
+					<a href="https://github.com/MCGJKOP" target="My Github" id="link">
+						Github头像:
+						<img src="https://avatars.githubusercontent.com/u/66903641?s=460&u=6ed63e36b617a2073070cdf29510c3387a8f0d8a&v=4" width="30" hieght="30">
+						<input type="button" value="我的Github">
+					</a>
+					<a href="https://mcgjkop.github.io/MyBlog/HTML/index.html" target="My Github" id="link">
+						<input type="button" value="TOOLS">
+					</a>
+				</div>
+			</div>
+		</div>	
+		<script>
+			function sign_in(){
+				var name = prompt("hello,我是在西瓜视频的护眼集团丶GJKOP\n你叫什么名字？","西瓜邪骨团god404")
+				if (name=="西瓜邪骨团god404"){
+					x="欢迎 " + name + "! 我会更新这个网页的。";
+					document.getElementById("demo").innerHTML=x;
+					document.getElementById("sign_in").innerHTML="已登录";
+					document.getElementById("sign_in").onclick="javascript:;";
+					document.getElementById("sign_in").style.cursor = "default";
+				}else{
+					if (name!=null && name!=""){
+						x="欢迎 " + name + "!";
+						document.getElementById("demo").innerHTML=x;
+						document.getElementById("sign_in").innerHTML="已登录";
+						document.getElementById("sign_in").onclick="javascript:;";
+						document.getElementById("sign_in").style.cursor = "default";
+					}
+				}
+			}
+		</script>
+	
+
+</body></html>

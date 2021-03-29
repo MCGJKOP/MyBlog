@@ -1,0 +1,58 @@
+<html>
+    <head>
+        
+        <script>
+            function Time(){
+                document.getElementById("DT").innerHTML=Date();
+                setTimeout(Time,1000);
+            }
+            function DC(){
+                document.getElementById('DT').className="DC";
+                document.getElementById('btns').className="DC";
+                document.body.className="DC";
+            }
+            function NDC(){
+                document.getElementById('DT').className="NDC";
+                document.getElementById('btns').className="NDC";
+                document.body.className="NDC";
+            }
+        </script>
+        <style>
+            body{
+                background-image:url("1.png");
+                background-repeat:no-repeat ;
+                text-align: center;
+                font-size: 2em;
+                color: white;
+            }
+            .DC{
+                cursor: default;
+            }
+            .NDC{
+                cursor: none;
+            }
+            #btns div{
+                background-image:linear-gradient(180deg,#777777,black);
+                display: inline-block;
+                width: 8em;
+                opacity: 0.1;
+                outline: none;
+                border-radius: 5px;
+                font-size: 25px;
+            }
+            #btns div:hover{
+                opacity: 0.9;
+                outline: none;
+            }
+        </style>
+    </head>
+    <body onload="Time()" class="DC">
+        <div id="DT" class="DC">
+
+        </div>
+        <div id="btns" >
+            <div onclick="DC()" class="DC">显示鼠标</div>
+            <div onclick="NDC()" class="DC">不显示鼠标</div>
+        </div>
+    </body>
+</html>
