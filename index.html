@@ -56,7 +56,8 @@
 		</div>	
 		<script>
 			function sign_in(){
-				var name = prompt("hello,我是在西瓜视频的护眼集团丶GJKOP\n你叫什么名字？","西瓜邪骨团god404")
+				var name = prompt("hello,我是在西瓜视频的护眼集团丶GJKOP\n你叫什么名字？","西瓜邪骨团god404");
+				var str = name.trim();
 				if (name=="西瓜邪骨团god404"){
 					x="欢迎 " + name + "! 我会更新这个网页的。";
 					document.getElementById("demo").innerText=x;
@@ -64,8 +65,8 @@
 					document.getElementById("sign_in").onclick="javascript:;";
 					document.getElementById("sign_in").style.cursor = "default";
 				}else{
-					if (name!=null || name.trim()!=""){
-						x="欢迎 " + name + "!";
+					if (name!=null || str!=""){
+						x="欢迎 " + str + "!";
 						document.getElementById("demo").innerText=x;
 						document.getElementById("sign_in").innerHTML="已登录";
 						document.getElementById("sign_in").onclick="javascript:;";
