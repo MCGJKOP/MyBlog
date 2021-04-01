@@ -64,7 +64,7 @@
 					document.getElementById("sign_in").onclick="javascript:;";
 					document.getElementById("sign_in").style.cursor = "default";
 				}else{
-					if (name!=null && name!=""){
+					if (name!=null || name.trim()!=""){
 						x="欢迎 " + name + "!";
 						document.getElementById("demo").innerText=x;
 						document.getElementById("sign_in").innerHTML="已登录";
