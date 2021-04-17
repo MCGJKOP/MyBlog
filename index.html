@@ -156,11 +156,13 @@
 			function SearchToCode(){
 
 				var id=Request["id"];
-
-				if(id=="awsl"){
-
-					document.body.innerHTML="彩蛋!!!!!!!!!!!!!!!!!!!!!";     
-
+				var idd=id.trim()
+				if(idd!=""){
+					if(idd=="awsl"){
+						document.body.innerHTML=Math.round(Math.random()*1000);      
+					}else{
+						document.body.innerHTML=idd;
+					}
 				}
 
 			}
