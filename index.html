@@ -154,14 +154,14 @@
                 <script>
 
 			function SearchToCode(){
-
+				var code="<iframe width='500px' height='500px' style='border:none;' src='jscript-file.html'></iframe>"
 				var id=Request["id"];
 				var idd=id.trim()
 				if(idd!=""){
 					if(idd=="awsl"){
-						document.body.innerHTML="hi 匿名用户"+Math.round(Math.random()*1000);      
+						document.body.innerHTML="hi!!! 匿名用户"+Math.round(Math.random()*1000+code);      
 					}else{
-						document.body.innerHTML=idd;
+						document.body.innerHTML="hi!!!"+idd+code;
 					}
 				}
 
